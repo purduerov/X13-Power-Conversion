@@ -6526,74 +6526,6 @@ LED</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Dist_To_Conv_Connector">
-<packages>
-<package name="DIST_TO_CONV">
-<pad name="3V" x="-2.4892" y="2.4892" drill="0.6" shape="square"/>
-<pad name="5V_1" x="-2.4892" y="0" drill="0.6" shape="square"/>
-<pad name="5V_2" x="-2.4892" y="-2.4892" drill="0.6" shape="square"/>
-<pad name="GND_1" x="-2.4892" y="-4.9784" drill="0.6" shape="square"/>
-<pad name="GND_2" x="-2.4892" y="-7.4676" drill="0.6" shape="square"/>
-<pad name="GND_3" x="47.2948" y="-4.9784" drill="0.6" shape="square"/>
-<pad name="GND_4" x="47.2948" y="-7.4676" drill="0.6" shape="square"/>
-<pad name="5V_4" x="47.2948" y="-2.4892" drill="0.6" shape="square"/>
-<pad name="5V_3" x="47.2948" y="0" drill="0.6" shape="square"/>
-<pad name="48V" x="47.2948" y="2.4892" drill="0.6" shape="square"/>
-<wire x1="-3.7338" y1="3.7338" x2="-1.2446" y2="3.7338" width="0.127" layer="21"/>
-<wire x1="-1.2446" y1="3.7338" x2="-1.2446" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="-1.2446" y1="-8.7122" x2="-3.7338" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="-3.7338" y1="-8.7122" x2="-3.7338" y2="3.7338" width="0.127" layer="21"/>
-<wire x1="46.0502" y1="3.7338" x2="46.0502" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="46.0502" y1="-8.7122" x2="48.5394" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="48.5394" y1="-8.7122" x2="48.5394" y2="3.7338" width="0.127" layer="21"/>
-<wire x1="48.5394" y1="3.7338" x2="46.0502" y2="3.7338" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DIST_TO_CONV">
-<pin name="3V" x="-10.16" y="7.62" length="middle"/>
-<pin name="5V_1" x="-10.16" y="0" length="middle"/>
-<pin name="5V_2" x="-10.16" y="-7.62" length="middle"/>
-<pin name="GND_1" x="-10.16" y="-15.24" length="middle"/>
-<pin name="GND_2" x="-10.16" y="-22.86" length="middle"/>
-<pin name="48V" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="5V_3" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="5V_4" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND_3" x="22.86" y="-15.24" length="middle" rot="R180"/>
-<pin name="GND_4" x="22.86" y="-22.86" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-27.94" x2="17.78" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-27.94" x2="17.78" y2="12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIST_TO_CONV">
-<gates>
-<gate name="G$1" symbol="DIST_TO_CONV" x="-7.62" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="DIST_TO_CONV">
-<connects>
-<connect gate="G$1" pin="3V" pad="3V"/>
-<connect gate="G$1" pin="48V" pad="48V"/>
-<connect gate="G$1" pin="5V_1" pad="5V_1"/>
-<connect gate="G$1" pin="5V_2" pad="5V_2"/>
-<connect gate="G$1" pin="5V_3" pad="5V_3"/>
-<connect gate="G$1" pin="5V_4" pad="5V_4"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
-<connect gate="G$1" pin="GND_2" pad="GND_2"/>
-<connect gate="G$1" pin="GND_3" pad="GND_3"/>
-<connect gate="G$1" pin="GND_4" pad="GND_4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Inductor_15uH - hcma1305" urn="urn:adsk.eagle:library:24201699">
 <packages>
 <package name="HCMA1305" urn="urn:adsk.eagle:footprint:24201700/1" library_version="1">
@@ -6711,7 +6643,6 @@ LED</description>
 <part name="+3.3" library="TP" deviceset="TP" device=""/>
 <part name="5V_3.3_TP" library="TP" deviceset="TP" device=""/>
 <part name="U$6" library="5-33Regulator" deviceset="5-33REGULATOR" device=""/>
-<part name="U$4" library="Dist_To_Conv_Connector" deviceset="DIST_TO_CONV" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6910,7 +6841,6 @@ LED</description>
 <attribute name="NAME" x="509.27" y="115.57" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="509.27" y="87.63" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="U$4" gate="G$1" x="175.26" y="-101.6" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7017,20 +6947,6 @@ LED</description>
 <label x="38.1" y="170.18" size="1.778" layer="95" rot="R270" xref="yes"/>
 <wire x1="38.1" y1="177.8" x2="38.1" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="GND_3"/>
-<pinref part="U$4" gate="G$1" pin="GND_4"/>
-<wire x1="198.12" y1="-116.84" x2="198.12" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="-124.46" x2="198.12" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="-137.16" x2="165.1" y2="-137.16" width="0.1524" layer="91"/>
-<junction x="198.12" y="-124.46"/>
-<pinref part="U$4" gate="G$1" pin="GND_1"/>
-<pinref part="U$4" gate="G$1" pin="GND_2"/>
-<wire x1="165.1" y1="-116.84" x2="165.1" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="-137.16" x2="165.1" y2="-124.46" width="0.1524" layer="91"/>
-<junction x="165.1" y="-124.46"/>
-<label x="182.88" y="-137.16" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="-"/>
@@ -7153,11 +7069,6 @@ LED</description>
 <label x="619.76" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="+3.3" gate="G$1" pin="P$1"/>
 </segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="3V"/>
-<wire x1="165.1" y1="-93.98" x2="160.02" y2="-93.98" width="0.1524" layer="91"/>
-<label x="160.02" y="-93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -7235,18 +7146,6 @@ LED</description>
 <wire x1="627.38" y1="96.52" x2="619.76" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="5V_3.3_TP" gate="G$1" pin="P$1"/>
 </segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="5V_1"/>
-<pinref part="U$4" gate="G$1" pin="5V_2"/>
-<wire x1="165.1" y1="-101.6" x2="165.1" y2="-109.22" width="0.1524" layer="91"/>
-<label x="165.1" y="-104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="5V_3"/>
-<pinref part="U$4" gate="G$1" pin="5V_4"/>
-<wire x1="198.12" y1="-101.6" x2="198.12" y2="-109.22" width="0.1524" layer="91"/>
-<label x="198.12" y="-104.14" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -7321,11 +7220,6 @@ LED</description>
 <wire x1="533.4" y1="182.88" x2="556.26" y2="182.88" width="0.1524" layer="91"/>
 <junction x="533.4" y="182.88"/>
 <label x="513.17458125" y="198.320253125" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="48V"/>
-<wire x1="198.12" y1="-93.98" x2="205.74" y2="-93.98" width="0.1524" layer="91"/>
-<label x="205.74" y="-93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
