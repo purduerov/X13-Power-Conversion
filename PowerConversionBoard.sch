@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1982,74 +1982,6 @@ Switches electrical signals</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Dist_To_Conv_Connector">
-<packages>
-<package name="DIST_TO_CONV">
-<pad name="3V" x="-2.4892" y="2.4892" drill="0.6" shape="square"/>
-<pad name="5V_1" x="-2.4892" y="0" drill="0.6" shape="square"/>
-<pad name="5V_2" x="-2.4892" y="-2.4892" drill="0.6" shape="square"/>
-<pad name="GND_1" x="-2.4892" y="-4.9784" drill="0.6" shape="square"/>
-<pad name="GND_2" x="-2.4892" y="-7.4676" drill="0.6" shape="square"/>
-<pad name="GND_3" x="47.2948" y="-4.9784" drill="0.6" shape="square"/>
-<pad name="GND_4" x="47.2948" y="-7.4676" drill="0.6" shape="square"/>
-<pad name="5V_4" x="47.2948" y="-2.4892" drill="0.6" shape="square"/>
-<pad name="5V_3" x="47.2948" y="0" drill="0.6" shape="square"/>
-<pad name="48V" x="47.2948" y="2.4892" drill="0.6" shape="square"/>
-<wire x1="-3.7338" y1="3.7338" x2="-1.2446" y2="3.7338" width="0.127" layer="21"/>
-<wire x1="-1.2446" y1="3.7338" x2="-1.2446" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="-1.2446" y1="-8.7122" x2="-3.7338" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="-3.7338" y1="-8.7122" x2="-3.7338" y2="3.7338" width="0.127" layer="21"/>
-<wire x1="46.0502" y1="3.7338" x2="46.0502" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="46.0502" y1="-8.7122" x2="48.5394" y2="-8.7122" width="0.127" layer="21"/>
-<wire x1="48.5394" y1="-8.7122" x2="48.5394" y2="3.7338" width="0.127" layer="21"/>
-<wire x1="48.5394" y1="3.7338" x2="46.0502" y2="3.7338" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DIST_TO_CONV">
-<pin name="3V" x="-10.16" y="7.62" length="middle"/>
-<pin name="5V_1" x="-10.16" y="0" length="middle"/>
-<pin name="5V_2" x="-10.16" y="-7.62" length="middle"/>
-<pin name="GND_1" x="-10.16" y="-15.24" length="middle"/>
-<pin name="GND_2" x="-10.16" y="-22.86" length="middle"/>
-<pin name="48V" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="5V_3" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="5V_4" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND_3" x="22.86" y="-15.24" length="middle" rot="R180"/>
-<pin name="GND_4" x="22.86" y="-22.86" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-27.94" x2="17.78" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-27.94" x2="17.78" y2="12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIST_TO_CONV">
-<gates>
-<gate name="G$1" symbol="DIST_TO_CONV" x="-7.62" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="DIST_TO_CONV">
-<connects>
-<connect gate="G$1" pin="3V" pad="3V"/>
-<connect gate="G$1" pin="48V" pad="48V"/>
-<connect gate="G$1" pin="5V_1" pad="5V_1"/>
-<connect gate="G$1" pin="5V_2" pad="5V_2"/>
-<connect gate="G$1" pin="5V_3" pad="5V_3"/>
-<connect gate="G$1" pin="5V_4" pad="5V_4"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
-<connect gate="G$1" pin="GND_2" pad="GND_2"/>
-<connect gate="G$1" pin="GND_3" pad="GND_3"/>
-<connect gate="G$1" pin="GND_4" pad="GND_4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="brick-capacitor-UCM1H331MNL1GS">
 <description>&lt;Nichicon 330uF 50 V Aluminium Electrolytic Capacitor SMD, CM Series 2000h 10 (Dia.) x 10mm&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -2338,6 +2270,78 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </deviceset>
 </devicesets>
 </library>
+<library name="Dist_Convert_Connector">
+<packages>
+<package name="CON2DIST">
+<pad name="5@2" x="1.27" y="-24.13" drill="1" diameter="1.6764"/>
+<pad name="5@1" x="1.27" y="-26.67" drill="1" diameter="1.6764"/>
+<pad name="5@3" x="3.81" y="-26.67" drill="1" diameter="1.6764"/>
+<pad name="5@4" x="3.81" y="-24.13" drill="1" diameter="1.6764"/>
+<pad name="3@3" x="-1.27" y="-24.13" drill="1" diameter="1.6764"/>
+<pad name="4" x="-1.27" y="-26.67" drill="1" diameter="1.6764"/>
+<pad name="3@1" x="-3.81" y="-26.67" drill="1" diameter="1.6764"/>
+<pad name="3@2" x="-3.81" y="-24.13" drill="1" diameter="1.6764"/>
+<wire x1="-5.08" y1="-22.86" x2="0" y2="-22.86" width="0.127" layer="21"/>
+<wire x1="0" y1="-22.86" x2="5.08" y2="-22.86" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-22.86" x2="5.08" y2="-27.94" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-27.94" x2="-5.08" y2="-27.94" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-22.86" width="0.127" layer="21"/>
+<pad name="2@1" x="1.27" y="22.86" drill="1" diameter="1.6764"/>
+<pad name="2@2" x="3.81" y="22.86" drill="1" diameter="1.6764"/>
+<pad name="1@2" x="-1.27" y="22.86" drill="1" diameter="1.6764"/>
+<pad name="1@1" x="-3.81" y="22.86" drill="1" diameter="1.6764"/>
+<wire x1="-5.08" y1="24.13" x2="-5.08" y2="21.59" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="21.59" x2="0" y2="21.59" width="0.127" layer="21"/>
+<wire x1="0" y1="21.59" x2="5.08" y2="21.59" width="0.127" layer="21"/>
+<wire x1="5.08" y1="21.59" x2="5.08" y2="24.13" width="0.127" layer="21"/>
+<wire x1="5.08" y1="24.13" x2="-5.08" y2="24.13" width="0.127" layer="21"/>
+<wire x1="0" y1="-22.86" x2="0" y2="21.59" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="24.384" x2="-5.334" y2="21.336" width="0.127" layer="40"/>
+<wire x1="5.334" y1="21.336" x2="5.334" y2="24.384" width="0.127" layer="40"/>
+<wire x1="-5.334" y1="21.336" x2="5.334" y2="21.336" width="0.127" layer="40"/>
+<wire x1="5.334" y1="24.384" x2="-5.334" y2="24.384" width="0.127" layer="40"/>
+<wire x1="-5.334" y1="-22.606" x2="5.334" y2="-22.606" width="0.127" layer="40"/>
+<wire x1="5.334" y1="-22.606" x2="5.334" y2="-28.194" width="0.127" layer="40"/>
+<wire x1="5.334" y1="-28.194" x2="-5.334" y2="-28.194" width="0.127" layer="40"/>
+<wire x1="-5.334" y1="-28.194" x2="-5.334" y2="-22.606" width="0.127" layer="40"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DIST_CONVERT_CONNECTOR">
+<pin name="VIN+" x="-7.62" y="2.54" length="middle"/>
+<pin name="VIN-" x="-7.62" y="-2.54" length="middle"/>
+<pin name="VOUT+_5" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="VOUT+_3" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="VOUT-" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CON2DIST">
+<gates>
+<gate name="G$1" symbol="DIST_CONVERT_CONNECTOR" x="-7.62" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="CON2DIST">
+<connects>
+<connect gate="G$1" pin="VIN+" pad="1@1 1@2"/>
+<connect gate="G$1" pin="VIN-" pad="2@1 2@2"/>
+<connect gate="G$1" pin="VOUT+_3" pad="4"/>
+<connect gate="G$1" pin="VOUT+_5" pad="3@1 3@2 3@3"/>
+<connect gate="G$1" pin="VOUT-" pad="5@1 5@2 5@3 5@4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2374,15 +2378,15 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="CADJ" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="5.6PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1000pF"/>
 <part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="3300pF"/>
 <part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
-<part name="U$2" library="Dist_To_Conv_Connector" deviceset="DIST_TO_CONV" device=""/>
 <part name="RT" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="82OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="82k"/>
 <part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="47uF"/>
-<part name="CIN" library="brick-capacitor-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="47uF"/>
+<part name="CIN" library="brick-capacitor-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="3.33uF"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1.6KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.2 Ohms"/>
-<part name="C24" library="PowerComponents" deviceset="C-TANTALUM(10UF_150UF)" device="" value="150uF"/>
-<part name="U$7" library="HCM1305" deviceset="HCM1305" device=""/>
-<part name="U$4" library="PowerComponents" deviceset="SWITCHMODE_SCHOTTKY" device=""/>
+<part name="COUT" library="PowerComponents" deviceset="C-TANTALUM(10UF_150UF)" device="" value="100uF"/>
+<part name="L1" library="HCM1305" deviceset="HCM1305" device=""/>
+<part name="D1" library="PowerComponents" deviceset="SWITCHMODE_SCHOTTKY" device=""/>
 <part name="RSEN" library="INA4181A4" deviceset="CSS2H-2512" device="" value="0.01"/>
+<part name="U$3" library="Dist_Convert_Connector" deviceset="CON2DIST" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2492,7 +2496,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <attribute name="NAME" x="272.542" y="168.275" size="1.778" layer="95"/>
 <attribute name="VALUE" x="272.542" y="163.703" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="175.26" y="-106.68" smashed="yes"/>
 <instance part="RT" gate="G$1" x="160.02" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="158.496" y="198.12" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="161.544" y="198.12" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -2509,19 +2512,22 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <attribute name="NAME" x="150.876" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="153.924" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="C24" gate="G$1" x="312.685278125" y="170.375990625" smashed="yes">
+<instance part="COUT" gate="G$1" x="312.685278125" y="170.375990625" smashed="yes">
 <attribute name="NAME" x="313.701278125" y="171.010990625" size="1.778" layer="95"/>
 <attribute name="VALUE" x="313.701278125" y="166.184990625" size="1.778" layer="96"/>
 </instance>
-<instance part="U$7" gate="G$1" x="272.470953125" y="177.816271875" smashed="yes" rot="R90">
+<instance part="L1" gate="G$1" x="272.470953125" y="177.816271875" smashed="yes" rot="R90">
 <attribute name="NAME" x="267.375334375" y="180.36408125" size="1.78346875" layer="95"/>
 </instance>
-<instance part="U$4" gate="G$1" x="243.84" y="157.48" smashed="yes" rot="R90">
+<instance part="D1" gate="G$1" x="243.84" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="241.3" y="157.48" size="1.27" layer="95" rot="R90"/>
 </instance>
 <instance part="RSEN" gate="G$1" x="243.84" y="198.374" smashed="yes" rot="R90">
 <attribute name="NAME" x="238.76" y="195.834" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="248.92" y="195.834" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="U$3" gate="G$1" x="165.481" y="-111.125" smashed="yes">
+<attribute name="NAME" x="162.941" y="-105.283" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -2580,43 +2586,37 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <label x="299.72" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND_3"/>
-<wire x1="198.12" y1="-121.92" x2="210.82" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-121.92" x2="210.82" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND_4"/>
-<wire x1="210.82" y1="-129.54" x2="198.12" y2="-129.54" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-129.54" x2="210.82" y2="-139.7" width="0.1524" layer="91"/>
-<junction x="210.82" y="-129.54"/>
-<wire x1="210.82" y1="-139.7" x2="157.48" y2="-139.7" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-139.7" x2="157.48" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND_1"/>
-<wire x1="157.48" y1="-129.54" x2="157.48" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-121.92" x2="165.1" y2="-121.92" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND_2"/>
-<wire x1="165.1" y1="-129.54" x2="157.48" y2="-129.54" width="0.1524" layer="91"/>
-<junction x="157.48" y="-129.54"/>
-<label x="182.88" y="-139.7" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="CIN" gate="G$1" pin="-"/>
 <wire x1="144.78" y1="196.215" x2="144.78" y2="190.5" width="0.1524" layer="91"/>
 <label x="144.78" y="190.5" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C24" gate="G$1" pin="-"/>
+<pinref part="COUT" gate="G$1" pin="-"/>
 <wire x1="312.685278125" y1="165.295990625" x2="312.674" y2="165.295990625" width="0.1524" layer="91"/>
 <wire x1="312.674" y1="165.295990625" x2="312.674" y2="161.036" width="0.1524" layer="91"/>
 <label x="312.674" y="161.036" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
+<pinref part="D1" gate="G$1" pin="P$1"/>
 <wire x1="241.3" y1="149.86" x2="241.3" y2="147.828" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="147.828" x2="243.332" y2="147.828" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="P$3"/>
+<pinref part="D1" gate="G$1" pin="P$3"/>
 <wire x1="243.332" y1="147.828" x2="246.38" y2="147.8026" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="147.8026" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="243.332" y1="147.828" x2="243.332" y2="144.78" width="0.1524" layer="91"/>
 <label x="243.332" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VIN-"/>
+<wire x1="157.861" y1="-113.665" x2="144.78" y2="-113.665" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-113.665" x2="144.78" y2="-114.3" width="0.1524" layer="91"/>
+<label x="144.78" y="-114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VOUT-"/>
+<wire x1="188.341" y1="-118.745" x2="188.341" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="188.341" y1="-121.92" x2="205.74" y2="-121.92" width="0.1524" layer="91"/>
+<label x="205.74" y="-121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -2645,14 +2645,10 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <junction x="152.4" y="91.44"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="3V"/>
-<wire x1="165.1" y1="-99.06" x2="160.02" y2="-99.06" width="0.1524" layer="91"/>
-<label x="160.02" y="-99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="48V"/>
-<wire x1="198.12" y1="-99.06" x2="205.74" y2="-99.06" width="0.1524" layer="91"/>
-<label x="205.74" y="-99.06" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="VOUT+_3"/>
+<wire x1="188.341" y1="-113.665" x2="188.341" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="188.341" y1="-114.3" x2="213.36" y2="-114.3" width="0.1524" layer="91"/>
+<label x="213.36" y="-114.3" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2692,29 +2688,19 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <wire x1="299.72" y1="177.8" x2="312.674" y2="177.8" width="0.1524" layer="91"/>
 <junction x="299.72" y="177.8"/>
 <label x="317.5" y="177.8" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$7" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="312.674" y1="177.8" x2="317.5" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="280.090953125" y1="177.8" x2="280.090953125" y2="177.816271875" width="0.1524" layer="91"/>
-<pinref part="C24" gate="G$1" pin="+"/>
+<pinref part="COUT" gate="G$1" pin="+"/>
 <wire x1="312.674" y1="177.8" x2="312.674" y2="173.652590625" width="0.1524" layer="91"/>
 <wire x1="312.674" y1="173.652590625" x2="312.685278125" y2="172.915990625" width="0.1524" layer="91"/>
 <junction x="312.674" y="177.8"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="5V_3"/>
-<wire x1="198.12" y1="-106.68" x2="205.74" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-106.68" x2="205.74" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="5V_4"/>
-<wire x1="205.74" y1="-114.3" x2="198.12" y2="-114.3" width="0.1524" layer="91"/>
-<label x="205.74" y="-111.76" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="5V_1"/>
-<wire x1="165.1" y1="-106.68" x2="157.48" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-106.68" x2="157.48" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="5V_2"/>
-<wire x1="157.48" y1="-114.3" x2="165.1" y2="-114.3" width="0.1524" layer="91"/>
-<label x="157.48" y="-111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="VOUT+_5"/>
+<wire x1="188.341" y1="-108.585" x2="198.12" y2="-108.585" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-108.585" x2="198.12" y2="-106.68" width="0.1524" layer="91"/>
+<label x="198.12" y="-106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2784,6 +2770,12 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <wire x1="160.02" y1="190.5" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="RT" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VIN+"/>
+<wire x1="157.861" y1="-108.585" x2="144.78" y2="-108.585" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-108.585" x2="144.78" y2="-106.68" width="0.1524" layer="91"/>
+<label x="144.78" y="-106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -2824,11 +2816,11 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <wire x1="251.714" y1="172.72" x2="256.54" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="172.72" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
 <junction x="243.84" y="172.72"/>
-<pinref part="U$7" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="251.714" y1="172.72" x2="251.714" y2="177.816271875" width="0.1524" layer="91"/>
 <wire x1="251.714" y1="177.816271875" x2="264.850953125" y2="177.816271875" width="0.1524" layer="91"/>
 <junction x="251.714" y="172.72"/>
-<pinref part="U$4" gate="G$1" pin="P$4"/>
+<pinref part="D1" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$11" class="0">
