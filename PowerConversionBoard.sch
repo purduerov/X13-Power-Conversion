@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2387,7 +2387,7 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="COUPLE" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1nF"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET_PCH" device="-NDS8434" package3d_urn="urn:adsk.eagle:package:38445/1" value=""/>
 <part name="RFB1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
-<part name="RADJ" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="9.5k"/>
+<part name="RADJ" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.8k"/>
 <part name="RFB2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
 <part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="8.6k"/>
 <part name="CVCC" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="5.6PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.47uF"/>
