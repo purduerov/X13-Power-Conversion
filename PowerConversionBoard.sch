@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2178,54 +2178,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </deviceset>
 </devicesets>
 </library>
-<library name="HCM1305">
-<packages>
-<package name="HCM1305">
-<smd name="1" x="0" y="5.5" dx="4.9" dy="3.3" layer="1"/>
-<smd name="2" x="0" y="-5.5" dx="4.9" dy="3.3" layer="1"/>
-<wire x1="-4" y1="8" x2="4" y2="8" width="0.1524" layer="25"/>
-<wire x1="4" y1="8" x2="4" y2="-8" width="0.1524" layer="25"/>
-<wire x1="4" y1="-8" x2="-4" y2="-8" width="0.1524" layer="26"/>
-<wire x1="-4" y1="-8" x2="-4" y2="8" width="0.1524" layer="25"/>
-<text x="0" y="1" size="1.778" layer="25">&gt;name</text>
-</package>
-</packages>
-<symbols>
-<symbol name="HCM1305">
-<description>HCM1305</description>
-<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
-<text x="2.547809375" y="5.09561875" size="1.78346875" layer="95" rot="R270">&gt;NAME</text>
-<pin name="1" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
-<text x="-2.54" y="2.54" size="1.778" layer="96" rot="R270">15 uH</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="HCM1305">
-<gates>
-<gate name="G$1" symbol="HCM1305" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HCM1305">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="INA4181A4">
 <packages>
 <package name="CSS2H-2512">
@@ -2342,6 +2294,71 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </deviceset>
 </devicesets>
 </library>
+<library name="Inductor_15uH - hcma1305">
+<packages>
+<package name="HCMA1305" urn="urn:adsk.eagle:footprint:24201700/1" locally_modified="yes">
+<smd name="1" x="-5.6" y="0" dx="3.6" dy="4.9" layer="1"/>
+<smd name="2" x="5.6" y="0" dx="3.6" dy="4.9" layer="1"/>
+<wire x1="-6.9" y1="6.25" x2="6.9" y2="6.25" width="0.127" layer="21"/>
+<wire x1="6.9" y1="6.25" x2="6.9" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="6.9" y1="-6.25" x2="-6.9" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-6.25" x2="-6.9" y2="6.25" width="0.127" layer="21"/>
+<text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-7.747" y1="-6.604" x2="-7.747" y2="6.477" width="0.127" layer="39"/>
+<wire x1="-7.747" y1="6.477" x2="7.747" y2="6.477" width="0.127" layer="39"/>
+<wire x1="7.747" y1="6.477" x2="7.747" y2="-6.604" width="0.127" layer="39"/>
+<wire x1="7.747" y1="-6.604" x2="-7.747" y2="-6.604" width="0.127" layer="39"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="HCMA1305" urn="urn:adsk.eagle:package:24201702/2" type="model">
+<packageinstances>
+<packageinstance name="HCMA1305"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="INDUCTOR">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<text x="2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HCMA1305" prefix="L">
+<description>Eaton HCMA1305-150-R Inductor</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HCMA1305">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24201702/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="15uH" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2383,10 +2400,10 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="CIN" library="brick-capacitor-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="3.33uF"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1.6KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.2 Ohms"/>
 <part name="COUT" library="PowerComponents" deviceset="C-TANTALUM(10UF_150UF)" device="" value="100uF"/>
-<part name="L1" library="HCM1305" deviceset="HCM1305" device=""/>
 <part name="D1" library="PowerComponents" deviceset="SWITCHMODE_SCHOTTKY" device=""/>
 <part name="RSEN" library="INA4181A4" deviceset="CSS2H-2512" device="" value="0.01"/>
 <part name="U$3" library="Dist_Convert_Connector" deviceset="CON2DIST" device=""/>
+<part name="L2" library="Inductor_15uH - hcma1305" deviceset="HCMA1305" device="" package3d_urn="urn:adsk.eagle:package:24201702/2" value="15uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -2516,9 +2533,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <attribute name="NAME" x="313.701278125" y="171.010990625" size="1.778" layer="95"/>
 <attribute name="VALUE" x="313.701278125" y="166.184990625" size="1.778" layer="96"/>
 </instance>
-<instance part="L1" gate="G$1" x="272.470953125" y="177.816271875" smashed="yes" rot="R90">
-<attribute name="NAME" x="267.375334375" y="180.36408125" size="1.78346875" layer="95"/>
-</instance>
 <instance part="D1" gate="G$1" x="243.84" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="241.3" y="157.48" size="1.27" layer="95" rot="R90"/>
 </instance>
@@ -2528,6 +2542,10 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </instance>
 <instance part="U$3" gate="G$1" x="165.481" y="-111.125" smashed="yes">
 <attribute name="NAME" x="162.941" y="-105.283" size="1.27" layer="95"/>
+</instance>
+<instance part="L2" gate="G$1" x="271.78" y="180.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="265.43" y="182.88" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="278.13" y="182.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -2677,7 +2695,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <junction x="91.44" y="91.44"/>
 </segment>
 <segment>
-<wire x1="280.090953125" y1="177.8" x2="292.1" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="292.1" y1="177.8" x2="292.1" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="172.72" x2="289.56" y2="172.72" width="0.1524" layer="91"/>
@@ -2688,13 +2705,14 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <wire x1="299.72" y1="177.8" x2="312.674" y2="177.8" width="0.1524" layer="91"/>
 <junction x="299.72" y="177.8"/>
 <label x="317.5" y="177.8" size="1.778" layer="95" xref="yes"/>
-<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="312.674" y1="177.8" x2="317.5" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="280.090953125" y1="177.8" x2="280.090953125" y2="177.816271875" width="0.1524" layer="91"/>
 <pinref part="COUT" gate="G$1" pin="+"/>
 <wire x1="312.674" y1="177.8" x2="312.674" y2="173.652590625" width="0.1524" layer="91"/>
 <wire x1="312.674" y1="173.652590625" x2="312.685278125" y2="172.915990625" width="0.1524" layer="91"/>
 <junction x="312.674" y="177.8"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="292.1" y1="177.8" x2="292.1" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="180.34" x2="279.4" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT+_5"/>
@@ -2812,15 +2830,15 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="243.84" y1="175.26" x2="243.84" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="172.72" x2="251.714" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="251.714" y1="172.72" x2="256.54" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="172.72" x2="251.46" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="172.72" x2="256.54" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="172.72" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
 <junction x="243.84" y="172.72"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="251.714" y1="172.72" x2="251.714" y2="177.816271875" width="0.1524" layer="91"/>
-<wire x1="251.714" y1="177.816271875" x2="264.850953125" y2="177.816271875" width="0.1524" layer="91"/>
-<junction x="251.714" y="172.72"/>
 <pinref part="D1" gate="G$1" pin="P$4"/>
+<pinref part="L2" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="172.72" x2="251.46" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="180.34" x2="264.16" y2="180.34" width="0.1524" layer="91"/>
+<junction x="251.46" y="172.72"/>
 </segment>
 </net>
 <net name="N$11" class="0">
