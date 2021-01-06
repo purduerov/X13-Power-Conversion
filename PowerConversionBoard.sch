@@ -676,43 +676,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </deviceset>
 </devicesets>
 </library>
-<library name="TP">
-<packages>
-<package name="TP">
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="25"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="25"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="25"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="25"/>
-<text x="0" y="3.81" size="1.778" layer="25">&gt;NAME</text>
-<pad name="P$1" x="0" y="0" drill="2.54"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TP">
-<circle x="0" y="3.81" radius="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94" style="shortdash"/>
-<pin name="P$1" x="0" y="-2.54" visible="off" length="middle" rot="R90"/>
-<text x="1.778" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TP">
-<gates>
-<gate name="G$1" symbol="TP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TP">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
 <description>&lt;h3&gt;SparkFun LEDs&lt;/h3&gt;
 This library contains discrete LEDs for illumination or indication, but no displays.
@@ -2356,8 +2319,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 <part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 <part name="D4" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
-<part name="+3.3" library="TP" deviceset="TP" device=""/>
-<part name="5V_3.3_TP" library="TP" deviceset="TP" device=""/>
 <part name="U3" library="Linear Regulator - AZ1117EH-3.3TRG1" deviceset="AZ1117EH-3.3TRG1" device=""/>
 <part name="U$1" library="Buck_Controller" deviceset="LM5085" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET_PCH" device="-NDS8434" package3d_urn="urn:adsk.eagle:package:38445/1" value=""/>
@@ -2372,18 +2333,19 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 <part name="RT" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="82OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="82k"/>
 <part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="47uF"/>
-<part name="CIN" library="brick-capacitor-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="3.33uF"/>
+<part name="CIN" library="brick-capacitor-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="47uF"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1.6KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.2 Ohms"/>
 <part name="COUT" library="PowerComponents" deviceset="C-TANTALUM(10UF_150UF)" device="" value="100uF"/>
 <part name="D1" library="PowerComponents" deviceset="SWITCHMODE_SCHOTTKY" device=""/>
 <part name="RSEN" library="INA4181A4" deviceset="CSS2H-2512" device="" value="0.01"/>
 <part name="U$3" library="Dist_Convert_Connector" deviceset="CON2DIST" device=""/>
 <part name="L2" library="Inductor_15uH - hcma1305" deviceset="HCMA1305" device="" package3d_urn="urn:adsk.eagle:package:24201702/2" value="15uH"/>
+<part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
+<part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="106.68" size="1.778" layer="95">Test Points</text>
 <text x="213.36" y="106.68" size="1.778" layer="95">Pins</text>
 <text x="101.6" y="101.6" size="1.778" layer="91">Linear Regulator</text>
 <text x="185.42" y="218.44" size="1.778" layer="91">Buck Controller</text>
@@ -2437,12 +2399,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <instance part="D4" gate="G$1" x="86.106" y="187.96" smashed="yes">
 <attribute name="NAME" x="82.677" y="183.388" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="88.011" y="183.388" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
-</instance>
-<instance part="+3.3" gate="G$1" x="256.54" y="99.06" smashed="yes" rot="R270">
-<attribute name="NAME" x="259.08" y="97.282" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="5V_3.3_TP" gate="G$1" x="256.54" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="259.08" y="87.122" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="U3" gate="G$1" x="109.22" y="88.9" smashed="yes">
 <attribute name="NAME" x="101.59058125" y="93.98628125" size="1.7802" layer="95"/>
@@ -2523,6 +2479,14 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <attribute name="NAME" x="265.43" y="182.88" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="278.13" y="182.88" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C3" gate="G$1" x="93.98" y="78.74" smashed="yes">
+<attribute name="NAME" x="94.742" y="77.343" size="1.778" layer="95"/>
+<attribute name="VALUE" x="94.234" y="81.407" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="142.24" y="83.82" smashed="yes">
+<attribute name="NAME" x="143.002" y="82.423" size="1.778" layer="95"/>
+<attribute name="VALUE" x="142.494" y="86.487" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2553,11 +2517,19 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <wire x1="119.38" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
 <label x="129.54" y="86.36" size="1.778" layer="95" xref="yes"/>
 <wire x1="127" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="127" y1="48.26" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="127" y1="48.26" x2="127" y2="71.12" width="0.1524" layer="91"/>
 <junction x="127" y="86.36"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="127" y1="71.12" x2="127" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="55.88" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="127" y1="48.26" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="76.2" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<junction x="127" y="71.12"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="81.28" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="185.42" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
@@ -2620,18 +2592,17 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <label x="213.36" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="254" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
-<label x="246.38" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="+3.3" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>
-<wire x1="119.38" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 <label x="157.48" y="91.44" size="1.778" layer="95" xref="yes"/>
 <pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="91.44" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="78.74" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
 <junction x="152.4" y="91.44"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="88.9" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
+<junction x="142.24" y="91.44"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT+_3"/>
@@ -2652,14 +2623,13 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <pinref part="5V_3.3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<label x="246.38" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="254" y1="88.9" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="5V_3.3_TP" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="99.06" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
 <label x="88.9" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="83.82" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<junction x="93.98" y="91.44"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -2746,14 +2716,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <pinref part="CADJ" gate="G$1" pin="2"/>
 <wire x1="232.918" y1="215.9" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
 <junction x="243.84" y="215.9"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="RT"/>
-<wire x1="180.34" y1="195.58" x2="177.8" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="195.58" x2="177.8" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="190.5" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="190.5" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="RT" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VIN+"/>
@@ -2856,6 +2818,17 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <wire x1="223.266" y1="209.3214" x2="223.266" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="223.266" y1="215.9" x2="225.298" y2="215.9" width="0.1524" layer="91"/>
 <junction x="223.266" y="209.3214"/>
+</segment>
+</net>
+<net name="RT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RT"/>
+<wire x1="180.34" y1="195.58" x2="177.8" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="195.58" x2="177.8" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="190.5" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="190.5" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="RT" gate="G$1" pin="1"/>
+<label x="165.1" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
