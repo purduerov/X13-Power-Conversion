@@ -2309,7 +2309,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="5R" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="470OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="5k"/>
 <part name="3R" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="470OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="470"/>
 <part name="1R" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="470OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="470"/>
@@ -2351,18 +2350,18 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <text x="185.42" y="218.44" size="1.778" layer="91">Buck Controller</text>
 <text x="66.04" y="223.52" size="1.778" layer="91">Test Diodes</text>
 <text x="226.06" y="114.3" size="1.778" layer="91">Test Points</text>
-<text x="162.56" y="-93.98" size="1.778" layer="91">Distribution Connector</text>
+<text x="213.36" y="50.8" size="1.778" layer="91">Distribution Connector</text>
+<text x="30.48" y="121.92" size="1.778" layer="91" align="top-left">Couple things:
+No polygon beneath the inductor
+Renaming the switch node and nets out of the controller
+Cbyp is in nF (probably should be on the uF magnitude)
+If you could add your calculations for future reference, that would be great!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-3.81" y="-3.81" smashed="yes">
 <attribute name="DRAWING_NAME" x="340.36" y="11.43" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="340.36" y="6.35" size="2.286" layer="94"/>
 <attribute name="SHEET" x="353.695" y="1.27" size="2.54" layer="94"/>
-</instance>
-<instance part="FRAME3" gate="G$1" x="-3.81" y="-278.13" smashed="yes">
-<attribute name="DRAWING_NAME" x="340.36" y="-262.89" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="340.36" y="-267.97" size="2.286" layer="94"/>
-<attribute name="SHEET" x="353.695" y="-273.05" size="2.54" layer="94"/>
 </instance>
 <instance part="5R" gate="G$1" x="55.88" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.356" y="198.12" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -2472,8 +2471,8 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <attribute name="NAME" x="238.76" y="195.834" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="248.92" y="195.834" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="U$3" gate="G$1" x="165.481" y="-111.125" smashed="yes">
-<attribute name="NAME" x="162.941" y="-105.283" size="1.27" layer="95"/>
+<instance part="U$3" gate="G$1" x="216.281" y="33.655" smashed="yes">
+<attribute name="NAME" x="213.741" y="39.497" size="1.27" layer="95"/>
 </instance>
 <instance part="L2" gate="G$1" x="271.78" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="265.43" y="182.88" size="1.778" layer="95" rot="R90"/>
@@ -2569,15 +2568,15 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VIN-"/>
-<wire x1="157.861" y1="-113.665" x2="144.78" y2="-113.665" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-113.665" x2="144.78" y2="-114.3" width="0.1524" layer="91"/>
-<label x="144.78" y="-114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="208.661" y1="31.115" x2="195.58" y2="31.115" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="31.115" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
+<label x="195.58" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT-"/>
-<wire x1="188.341" y1="-118.745" x2="188.341" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="188.341" y1="-121.92" x2="205.74" y2="-121.92" width="0.1524" layer="91"/>
-<label x="205.74" y="-121.92" size="1.778" layer="95" xref="yes"/>
+<wire x1="239.141" y1="26.035" x2="239.141" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="239.141" y1="22.86" x2="256.54" y2="22.86" width="0.1524" layer="91"/>
+<label x="256.54" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -2606,9 +2605,9 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT+_3"/>
-<wire x1="188.341" y1="-113.665" x2="188.341" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="188.341" y1="-114.3" x2="213.36" y2="-114.3" width="0.1524" layer="91"/>
-<label x="213.36" y="-114.3" size="1.778" layer="95" xref="yes"/>
+<wire x1="239.141" y1="31.115" x2="239.141" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="239.141" y1="30.48" x2="264.16" y2="30.48" width="0.1524" layer="91"/>
+<label x="264.16" y="30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2653,9 +2652,9 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT+_5"/>
-<wire x1="188.341" y1="-108.585" x2="198.12" y2="-108.585" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="-108.585" x2="198.12" y2="-106.68" width="0.1524" layer="91"/>
-<label x="198.12" y="-106.68" size="1.778" layer="95" xref="yes"/>
+<wire x1="239.141" y1="36.195" x2="248.92" y2="36.195" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="36.195" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
+<label x="248.92" y="38.1" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2719,9 +2718,9 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VIN+"/>
-<wire x1="157.861" y1="-108.585" x2="144.78" y2="-108.585" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-108.585" x2="144.78" y2="-106.68" width="0.1524" layer="91"/>
-<label x="144.78" y="-106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="208.661" y1="36.195" x2="195.58" y2="36.195" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="36.195" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
+<label x="195.58" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2837,6 +2836,10 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
