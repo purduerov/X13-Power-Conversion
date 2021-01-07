@@ -2723,15 +2723,16 @@ If you could add your calculations for future reference, that would be great!</t
 <label x="195.58" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="208.28" y1="205.74" x2="210.82" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="CVCC" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="205.74" x2="210.82" y2="213.36" width="0.1524" layer="91"/>
+<label x="210.82" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="ISEN" class="0">
 <segment>
 <wire x1="243.84" y1="190.5" x2="226.06" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="190.5" x2="226.06" y2="195.58" width="0.1524" layer="91"/>
@@ -2742,18 +2743,20 @@ If you could add your calculations for future reference, that would be great!</t
 <pinref part="RSEN" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="189.992" x2="243.84" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="190.5" x2="243.84" y2="190.754" width="0.1524" layer="91"/>
+<label x="228.6" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="PGATE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PGATE"/>
 <wire x1="208.28" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="190.5" x2="220.98" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="220.98" y1="182.88" x2="236.22" y2="182.88" width="0.1524" layer="91"/>
+<label x="226.06" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="SWITCH" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="243.84" y1="175.26" x2="243.84" y2="172.72" width="0.1524" layer="91"/>
@@ -2767,6 +2770,7 @@ If you could add your calculations for future reference, that would be great!</t
 <wire x1="251.46" y1="172.72" x2="251.46" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="180.34" x2="264.16" y2="180.34" width="0.1524" layer="91"/>
 <junction x="251.46" y="172.72"/>
+<label x="251.46" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -2787,7 +2791,7 @@ If you could add your calculations for future reference, that would be great!</t
 <wire x1="152.4" y1="71.12" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="FB" class="0">
 <segment>
 <pinref part="RFB1" gate="G$1" pin="1"/>
 <pinref part="RFB2" gate="G$1" pin="2"/>
@@ -2803,9 +2807,10 @@ If you could add your calculations for future reference, that would be great!</t
 <pinref part="U$1" gate="G$1" pin="FB"/>
 <wire x1="215.9" y1="185.42" x2="208.28" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="254" y1="162.56" x2="215.9508" y2="162.56" width="0.1524" layer="91"/>
+<label x="223.52" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="ADJ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADJ"/>
 <wire x1="208.28" y1="200.66" x2="223.266" y2="200.66" width="0.1524" layer="91"/>
@@ -2817,6 +2822,7 @@ If you could add your calculations for future reference, that would be great!</t
 <wire x1="223.266" y1="209.3214" x2="223.266" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="223.266" y1="215.9" x2="225.298" y2="215.9" width="0.1524" layer="91"/>
 <junction x="223.266" y="209.3214"/>
+<label x="215.9" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RT" class="0">
