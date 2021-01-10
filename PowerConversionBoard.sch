@@ -1351,6 +1351,7 @@ LED</description>
 <wire x1="3.55" y1="2.7" x2="3.55" y2="-0.65" width="0.127" layer="21"/>
 <wire x1="3.55" y1="-0.65" x2="0.8" y2="-0.65" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.65" x2="0.8" y2="2.7" width="0.127" layer="21"/>
+<circle x="1.27" y="2.032" radius="0.359209375" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2351,11 +2352,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <text x="66.04" y="223.52" size="1.778" layer="91">Test Diodes</text>
 <text x="226.06" y="114.3" size="1.778" layer="91">Test Points</text>
 <text x="213.36" y="50.8" size="1.778" layer="91">Distribution Connector</text>
-<text x="30.48" y="121.92" size="1.778" layer="91" align="top-left">Couple things:
-No polygon beneath the inductor
-Renaming the switch node and nets out of the controller
-Cbyp is in nF (probably should be on the uF magnitude)
-If you could add your calculations for future reference, that would be great!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-3.81" y="-3.81" smashed="yes">
@@ -2512,12 +2508,9 @@ If you could add your calculations for future reference, that would be great!</t
 <pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="ADJ/GND"/>
-<wire x1="119.38" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
 <label x="129.54" y="86.36" size="1.778" layer="95" xref="yes"/>
 <wire x1="127" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="127" y1="48.26" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<junction x="127" y="86.36"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="127" y1="71.12" x2="127" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="55.88" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
@@ -2529,6 +2522,9 @@ If you could add your calculations for future reference, that would be great!</t
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="81.28" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="ADJ/GND"/>
+<wire x1="119.38" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<junction x="127" y="86.36"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="185.42" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
@@ -2559,12 +2555,13 @@ If you could add your calculations for future reference, that would be great!</t
 <segment>
 <pinref part="D1" gate="G$1" pin="P$1"/>
 <wire x1="241.3" y1="149.86" x2="241.3" y2="147.828" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="147.828" x2="243.332" y2="147.828" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="147.828" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="P$3"/>
-<wire x1="243.332" y1="147.828" x2="246.38" y2="147.8026" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="147.32" x2="246.38" y2="147.8026" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="147.8026" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="243.332" y1="147.828" x2="243.332" y2="144.78" width="0.1524" layer="91"/>
-<label x="243.332" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="243.84" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="243.84" y1="144.78" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
+<junction x="243.84" y="147.32"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VIN-"/>
@@ -2697,13 +2694,11 @@ If you could add your calculations for future reference, that would be great!</t
 <junction x="160.02" y="205.74"/>
 <pinref part="CBYP" gate="G$1" pin="1"/>
 <junction x="170.18" y="205.74"/>
-<pinref part="CVCC" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="220.98" x2="210.82" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="223.52" x2="210.82" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="223.52" x2="170.18" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="223.52" x2="170.18" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="RT" gate="G$1" pin="2"/>
 <pinref part="CIN" gate="G$1" pin="+"/>
-<wire x1="210.82" y1="223.52" x2="243.84" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="RSEN" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="208.534" x2="243.84" y2="209.3468" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="209.3468" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
@@ -2715,6 +2710,9 @@ If you could add your calculations for future reference, that would be great!</t
 <pinref part="CADJ" gate="G$1" pin="2"/>
 <wire x1="232.918" y1="215.9" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
 <junction x="243.84" y="215.9"/>
+<pinref part="CVCC" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="220.98" x2="210.82" y2="223.52" width="0.1524" layer="91"/>
+<junction x="210.82" y="223.52"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VIN+"/>
@@ -2734,16 +2732,16 @@ If you could add your calculations for future reference, that would be great!</t
 </net>
 <net name="ISEN" class="0">
 <segment>
-<wire x1="243.84" y1="190.5" x2="226.06" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="190.5" x2="226.06" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="187.96" x2="226.06" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="ISEN"/>
 <wire x1="226.06" y1="195.58" x2="208.28" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="243.84" y1="185.42" x2="243.84" y2="189.992" width="0.1524" layer="91"/>
-<pinref part="RSEN" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="189.992" x2="243.84" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="190.5" x2="243.84" y2="190.754" width="0.1524" layer="91"/>
 <label x="228.6" y="190.5" size="1.778" layer="95"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="RSEN" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="190.754" x2="243.84" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="187.96" x2="243.84" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="187.96" x2="243.84" y2="187.96" width="0.1524" layer="91"/>
+<junction x="243.84" y="187.96"/>
 </segment>
 </net>
 <net name="PGATE" class="0">
@@ -2842,10 +2840,6 @@ If you could add your calculations for future reference, that would be great!</t
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
