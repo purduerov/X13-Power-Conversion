@@ -2257,21 +2257,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="Schottky Diode 8A - MBRD835LT4G">
 <packages>
 <package name="DPAK-3">
-<smd name="4" x="-3.1" y="0" dx="5.8" dy="6.2" layer="1" rot="R90"/>
-<smd name="3" x="4.08" y="2.285" dx="3" dy="1.6" layer="1"/>
-<smd name="1" x="4.08" y="-2.285" dx="3" dy="1.6" layer="1"/>
-<wire x1="5.8" y1="3.3" x2="5.8" y2="-3.3" width="0.254" layer="21"/>
-<wire x1="5.8" y1="-3.3" x2="-6.6" y2="-3.3" width="0.254" layer="21"/>
-<wire x1="-6.6" y1="-3.3" x2="-6.6" y2="3.3" width="0.254" layer="21"/>
-<wire x1="-6.6" y1="3.3" x2="5.8" y2="3.3" width="0.254" layer="21"/>
-<text x="-0.3" y="3.7" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="-6.731" y1="3.429" x2="-6.731" y2="-3.429" width="0.127" layer="39"/>
-<wire x1="-6.731" y1="-3.429" x2="5.969" y2="-3.429" width="0.127" layer="39"/>
-<wire x1="5.969" y1="-3.429" x2="5.969" y2="3.429" width="0.127" layer="39"/>
-<wire x1="5.969" y1="3.429" x2="-6.731" y2="3.429" width="0.127" layer="39"/>
-<text x="-0.046" y="-3.666" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<smd name="4" x="2.83" y="-0.27" dx="5.8" dy="6.2" layer="1" rot="R270"/>
+<smd name="3" x="-4.35" y="-2.555" dx="3" dy="1.6" layer="1" rot="R180"/>
+<smd name="1" x="-4.35" y="2.015" dx="3" dy="1.6" layer="1" rot="R180"/>
+<wire x1="-6.07" y1="-3.57" x2="-6.07" y2="3.03" width="0.254" layer="21"/>
+<wire x1="-6.07" y1="3.03" x2="6.33" y2="3.03" width="0.254" layer="21"/>
+<wire x1="6.33" y1="3.03" x2="6.33" y2="-3.57" width="0.254" layer="21"/>
+<wire x1="6.33" y1="-3.57" x2="-6.07" y2="-3.57" width="0.254" layer="21"/>
+<text x="0.03" y="-3.97" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+<wire x1="6.461" y1="-3.699" x2="6.461" y2="3.159" width="0.127" layer="39"/>
+<wire x1="6.461" y1="3.159" x2="-6.239" y2="3.159" width="0.127" layer="39"/>
+<wire x1="-6.239" y1="3.159" x2="-6.239" y2="-3.699" width="0.127" layer="39"/>
+<wire x1="-6.239" y1="-3.699" x2="6.461" y2="-3.699" width="0.127" layer="39"/>
+<text x="-0.224" y="3.396" size="1.27" layer="27" rot="R180" align="top-left">&gt;VALUE</text>
+</package>
+<package name="TO229P990X218-3N" urn="urn:adsk.eagle:footprint:25915564/1">
+<description>3-TO, DPAK, 2.29 mm pitch, 9.90 mm span, 6.54 X 6.09 X 2.18 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.29 mm pitch, 9.90 mm span with body size 6.54 X 6.09 X 2.18 mm&lt;/p&gt;</description>
+<circle x="-4.2409" y="3.4013" radius="0.25" width="0" layer="21"/>
+<wire x1="3.8475" y1="3.0175" x2="3.8475" y2="3.365" width="0.12" layer="21"/>
+<wire x1="3.8475" y1="3.365" x2="-2.3725" y2="3.365" width="0.12" layer="21"/>
+<wire x1="-2.3725" y1="3.365" x2="-2.3725" y2="-3.365" width="0.12" layer="21"/>
+<wire x1="-2.3725" y1="-3.365" x2="3.8475" y2="-3.365" width="0.12" layer="21"/>
+<wire x1="3.8475" y1="-3.365" x2="3.8475" y2="-3.0175" width="0.12" layer="21"/>
+<wire x1="3.8475" y1="-3.365" x2="-2.3725" y2="-3.365" width="0.12" layer="51"/>
+<wire x1="-2.3725" y1="-3.365" x2="-2.3725" y2="3.365" width="0.12" layer="51"/>
+<wire x1="-2.3725" y1="3.365" x2="3.8475" y2="3.365" width="0.12" layer="51"/>
+<wire x1="3.8475" y1="3.365" x2="3.8475" y2="-3.365" width="0.12" layer="51"/>
+<smd name="1" x="-4.2409" y="2.29" dx="2.6343" dy="1.2146" layer="1"/>
+<smd name="2" x="-4.2409" y="-2.29" dx="2.6343" dy="1.2146" layer="1"/>
+<smd name="3" x="2.5909" y="0" dx="5.9343" dy="5.527" layer="1"/>
+<text x="0" y="4.2863" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="TO229P990X218-3N" urn="urn:adsk.eagle:package:25915513/1" type="model">
+<description>3-TO, DPAK, 2.29 mm pitch, 9.90 mm span, 6.54 X 6.09 X 2.18 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.29 mm pitch, 9.90 mm span with body size 6.54 X 6.09 X 2.18 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TO229P990X218-3N"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="SWITCHMODE_SCHOTTKY">
 <polygon width="0.254" layer="94">
@@ -2318,6 +2346,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="A@2" pad="3"/>
 <connect gate="G$1" pin="C" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25915513/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2362,7 +2393,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="CIN" library="brick-capacitor-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="47uF"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1.6KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.2 Ohms"/>
 <part name="COUT" library="PowerComponents" deviceset="C-TANTALUM(10UF_150UF)" device="" value="100uF"/>
-<part name="D1" library="Schottky Diode 8A - MBRD835LT4G" deviceset="SWITCHMODE_SCHOTTKY" device=""/>
+<part name="D1" library="Schottky Diode 8A - MBRD835LT4G" deviceset="SWITCHMODE_SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:25915513/1"/>
 <part name="RSEN" library="INA4181A4" deviceset="CSS2H-2512" device="" value="0.01"/>
 <part name="U$3" library="Dist_Convert_Connector" deviceset="CON2DIST" device=""/>
 <part name="L2" library="Inductor_15uH - hcma1305" deviceset="HCMA1305" device="" package3d_urn="urn:adsk.eagle:package:24201702/2" value="15uH"/>
@@ -2829,6 +2860,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="152.4" y1="106.68" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
 <junction x="152.4" y="106.68"/>
+<pinref part="U$1" gate="G$1" pin="FB"/>
+<wire x1="96.52" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="106.68" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADJ" class="0">
@@ -2855,13 +2889,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="40.64" y1="137.16" x2="40.64" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="RT" gate="G$1" pin="1"/>
 <label x="45.72" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="FB"/>
-<wire x1="96.52" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="96.5708" y1="106.68" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
